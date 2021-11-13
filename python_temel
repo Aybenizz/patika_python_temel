@@ -1,0 +1,28 @@
+Q1-)
+data = [[1, 'a', ['cat'], 2], [[[3]], 'dog'], 4, 5]
+flat_list = []
+
+def flatten_list(data):
+   
+    for i in data:
+       
+        if type(i) == list:
+            
+            flatten_list(i)
+        else:
+            flat_list.append(i)
+
+
+flatten_list(data)
+
+print(flat_list)
+
+
+Q2-)
+liste2 = [[1, 2], [3, 4], [5, 6, 7]]
+
+for i in liste2:
+    i.reverse()
+liste2.reverse()
+
+liste2
